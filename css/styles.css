@@ -1,0 +1,320 @@
+body {
+  min-width: 1200px;
+  margin-top: 44px;
+  font-family: "Montserrat", sans-serif;
+  background: #f6dcc7 url(../img/bg.png) center top no-repeat;
+  background-size: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  height: 856px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0.5px;
+  color: #63385f;
+  margin-left: 24px;
+}
+
+.info-block {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.info-raw {
+  display: flex;
+  align-items: center;
+}
+
+.info-raw:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.info-img {
+  height: 12px;
+  margin-right: 8px;
+}
+
+.info-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: #63385f;
+}
+
+.small-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #dc7647;
+}
+
+.small-text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.links {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.store-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+#appstore {
+  margin-right: 18px;
+}
+
+.agreement {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  color: #63385f;
+}
+.agreement:visited {
+  color: #9f0ab8;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 960px;
+    height: 720px;
+  }
+  body {
+    min-width: 992px;
+    background-size: 868px;
+    background-position: top 20px right 20px;
+  }
+  .logo {
+    height: 140px;
+  }
+  .info-block {
+    margin-top: 36px;
+    margin-bottom: 32px;
+  }
+  .info-raw:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .store-links {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+    height: 900px;
+  }
+  body {
+    min-width: 768px;
+    background-size: 600px;
+    margin-top: 36px;
+    background-position: top 60px right 50px;
+  }
+  .logo {
+    height: 116px;
+  }
+  .header-text {
+    font-size: 64px;
+  }
+  .info-block {
+    margin-top: 24px;
+    margin-bottom: 44px;
+  }
+  .info-raw:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .info-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .small-text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .small-text:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .links {
+    right: 0;
+    bottom: 0;
+  }
+  .store-links {
+    margin-bottom: 0;
+  }
+
+  #appstore {
+    margin-right: 12px;
+  }
+  .agreement {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    height: 900px;
+  }
+  body {
+    min-width: 576px;
+    background-size: 480px;
+    background-position: top 230px center;
+  }
+  .logo {
+    height: 72px;
+  }
+  .header-text {
+    font-size: 48px;
+    margin-left: 16px;
+  }
+  .info-block {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .info-raw:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .info-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .small-text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .small-text:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .links {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .store-links {
+    margin-bottom: 0;
+  }
+
+  #appstore {
+    margin-right: 12px;
+  }
+  .agreement {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 520px;
+    height: 880px;
+  }
+  body {
+    min-width: 540px;
+    background-position: top 220px center;
+  }
+  .googleplay {
+    height: 36px;
+  }
+  #appstore {
+    margin-right: 8px;
+    height: 36px;
+  }
+  .agreement {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 440px;
+    height: 820px;
+  }
+  body {
+    min-width: 460px;
+    margin-top: 36px;
+    background-size: 400px;
+    background-position: center top 250px;
+  }
+  .logo {
+    height: 72px;
+  }
+  .header-text {
+    font-size: 36px;
+    margin-left: 12px;
+  }
+  .info-block {
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+  .small-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #googleplay {
+    height: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 320px;
+    height: 700px;
+  }
+  body {
+    min-width: 340px;
+    background-size: 290px;
+    background-position: center top 260px;
+    margin-top: 24px;
+  }
+  .logo {
+    height: 56px;
+  }
+  .header-text {
+    font-size: 32px;
+    margin-left: 8px;
+  }
+  .info-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .small-text {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  .store-links {
+    height: 40px;
+  }
+}
